@@ -1,0 +1,1165 @@
+Creating a Portfolio Website for Deepak Kumar Pandey
+Based on your CV and the example website you've provided, I'll create a complete portfolio website for Deepak Kumar Pandey using HTML, Tailwind CSS, and JavaScript. I'll adapt the structure to match your experience, skills, and projects while maintaining the attractive visual style.
+
+HTML Code (index.html)
+Copy<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepak Kumar Pandey | Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar py-4 px-6">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold text-white">
+          DEEPAK<span class="text-blue-400">PANDEY</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#home"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-white hover:text-blue-400 transition-colors"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Projects</a
+          >
+          <a
+            href="#experience"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Experience</a
+          >
+          <a
+            href="#certificates"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Certificates</a
+          >
+          <a
+            href="#education"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Education</a
+          >
+          <a
+            href="#contact"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Contact</a
+          >
+        </div>
+        <div class="md:hidden text-white text-2xl">
+          <i class="fas fa-bars" id="menu-button"></i>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden absolute top-full left-0 right-0 bg-gray-800 py-4 px-6 text-center"
+      >
+        <div class="flex flex-col space-y-4">
+          <a href="#home" class="text-white hover:text-blue-400 transition-colors flex items-center">
+            <img src="./deepak1.jpg" alt="Deepak" class="w-8 h-8 rounded-full mr-2">
+            Home
+          </a>
+          <a
+            href="#about"
+            class="text-white hover:text-blue-400 transition-colors"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Projects</a
+          >
+          <a
+            href="#experience"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Experience</a
+          >
+          <a
+            href="#certificates"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Certificates</a
+          >
+          <a
+            href="#education"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Education</a
+          >
+          <a
+            href="#contact"
+            class="text-white hover:text-blue-400 transition-colors"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="hero-content text-white md:w-1/2" data-aos="fade-up">
+            <h1>I'm <span class="text-blue-400">Deepak Kumar Pandey</span></h1>
+            <h2 class="text-2xl mb-6">
+              I'm a <span class="typed-text font-semibold"></span>
+            </h2>
+            <p class="text-gray-300 mb-8">
+              A passionate Computer Science Engineering student specializing in full-stack development,
+              with expertise in React, Node.js, and database management.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#contact"
+                class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full transition-all transform hover:-translate-y-1 hover:shadow-lg"
+                >Get In Touch</a
+              >
+              <a
+                href="#projects"
+                class="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-gray-800 transition-all transform hover:-translate-y-1 hover:shadow-lg"
+                >View Work</a
+              >
+            </div>
+          </div>
+          <div
+            class="md:w-1/2 flex justify-center mt-10 md:mt-0"
+            data-aos="fade-left"
+          >
+            <div class="relative">
+              <div
+                class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-blue-400 bg-opacity-20 flex items-center justify-center animate-float"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                  class="absolute top-0 right-0 w-16 h-16 animate-spin-slow"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  class="absolute bottom-0 left-0 w-16 h-16"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  class="absolute top-0 left-10 w-14 h-14"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  class="absolute bottom-10 right-0 w-14 h-14"
+                />
+                <div
+                  class="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-white"
+                >
+                <div class="w-full max-w-md aspect-square bg-gray-100 absolute top-5 left-5 rounded-full overflow-hidden shadow-xl">
+                  <div class="w-full h-full overflow-hidden rounded-full">
+                    <img 
+                      src="./deepak1.jpg" 
+                      alt="Deepak Kumar Pandey" 
+                      class="w-full h-full object-cover"
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-bold text-center mb-16 section-title"
+          data-aos="fade-up"
+        >
+          About Me
+        </h2>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+            <div class="relative">
+              <div
+                class="w-full max-w-md aspect-square bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg transform rotate-3"
+              ></div>
+              <div
+                class="w-full max-w-md aspect-square bg-gray-100 absolute top-5 left-5 rounded-lg overflow-hidden shadow-xl"
+              >
+                <div class="w-full h-full overflow-hidden">
+                  <!-- Your square image - replace with your actual image -->
+                  <img src="./deepak1.jpg" alt="Deepak Kumar Pandey" class="w-full h-full object-cover">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-10" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold mb-4">Full Stack Developer</h3>
+            <p class="text-gray-600 mb-6">
+              I'm Deepak Kumar Pandey, a Computer Science Engineering student at Lovely Professional University
+              with a passion for full-stack development and problem-solving.
+            </p>
+            <p class="text-gray-600 mb-6">
+              I specialize in creating web applications using React.js and Node.js, with experience in database
+              management using MongoDB and MySQL. My goal is to build efficient, user-friendly systems that solve
+              real-world problems.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div>
+                <p class="font-semibold">Name:</p>
+                <p class="text-gray-600">Deepak Kumar Pandey</p>
+              </div>
+              <div>
+                <p class="font-semibold">Email:</p>
+                <p class="text-gray-600">deepak822082@gmail.com</p>
+              </div>
+              <div>
+                <p class="font-semibold">Phone:</p>
+                <p class="text-gray-600">+91 9305196163</p>
+              </div>
+              <div>
+                <p class="font-semibold">Location:</p>
+                <p class="text-gray-600">Punjab, India</p>
+              </div>
+            </div>
+            <a
+              href="./Deepak_Pandey Resume (1).pdf"
+              download
+              class="download-btn"
+            >
+              <i class="fas fa-download mr-2"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-bold text-center mb-16 section-title"
+          data-aos="fade-up"
+        >
+          Skills & Expertise
+        </h2>
+
+        <div class="mb-16">
+          <h3
+            class="text-2xl font-semibold mb-8 text-center"
+            data-aos="fade-up"
+          >
+            Programming Languages
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">C++</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">C</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">JavaScript</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">PHP</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-16">
+          <h3
+            class="text-2xl font-semibold mb-8 text-center"
+            data-aos="fade-up"
+          >
+            Frameworks & Technologies
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">HTML5</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">CSS3</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">React</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">Node.js</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-16">
+          <h3
+            class="text-2xl font-semibold mb-8 text-center"
+            data-aos="fade-up"
+          >
+            Tools & Platforms
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">MongoDB</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">MySQL</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">Git</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                class="tech-icon"
+              />
+              <h4 class="font-semibold">GitHub</h4>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3
+            class="text-2xl font-semibold mb-8 text-center"
+            data-aos="fade-up"
+          >
+            Soft Skills
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div
+                class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-lightbulb text-blue-500 text-2xl"></i>
+              </div>
+              <h4 class="font-semibold">Problem-Solving</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div
+                class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-users text-blue-500 text-2xl"></i>
+              </div>
+              <h4 class="font-semibold">Leadership</h4>
+            </div>
+            <div
+              class="skill-item flex flex-col items-center"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div
+                class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-clock text-blue-500 text-2xl"></i>
+              </div>
+              <h4 class="font-semibold">Time-Management</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-bold text-center mb-16 section-title"
+          data-aos="fade-up"
+        >
+          Projects
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Project 1 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img
+                src="./hospital.jpeg"
+                alt="Hospital Management System"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Hospital Management System</h3>
+              <p class="text-gray-600 mb-4">
+                A full-stack web application built with React.js, Node.js, and MongoDB, offering patient record 
+                management, doctor scheduling, billing automation, and secure JWT-based authentication.
+              </p>
+              <div class="mb-4">
+                <h4 class="font-medium mb-2">Technologies Used:</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >HTML</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >CSS</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >JavaScript</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >Node.js</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >React</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <a
+                  href="https://github.com/Deepak7206237949/HospitalManagementSystem"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-700 flex items-center"
+                >
+                  <i class="fab fa-github mr-1"></i> View Project
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <img
+                src="./plant.jpeg"
+                alt="Virtual Herbal Garden"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Virtual Herbal Garden</h3>
+              <p class="text-gray-600 mb-4">
+                An interactive platform showcasing AYUSH medicinal plants through 3D models, AI-powered search, 
+                and virtual tours. Integrated with NLP-based search functionality and Google Maps API.
+              </p>
+              <div class="mb-4">
+                <h4 class="font-medium mb-2">Technologies Used:</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >React.js</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >Node.js</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >MongoDB</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >Blender</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >Unity3D</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                    >Google Maps API</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <a
+                  href="https://github.com/radhey2003/HerbalGarden-Hackathon"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-700 flex items-center"
+                >
+                  <i class="fab fa-github mr-1"></i> View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-bold text-center mb-16 section-title"
+          data-aos="fade-up"
+        >
+          Work Experience
+        </h2>
+
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="flex items-center justify-between w-full">
+              <div class="flex justify-center w-2/5 mr-4 hidden md:flex">
+                <img
+                  src="./stactedutact.jpeg"
+                  alt="Stack Edutech Logo"
+                  class="w-64 h-64 object-contain"
+                />
+              </div>
+              <div class="timeline-content ml-auto">
+                <div
+                  class="bg-blue-500 text-white p-2 inline-block rounded mb-3"
+                >
+                  <i class="fas fa-briefcase"></i> October 2024 - December 2024
+                </div>
+                <h3 class="text-xl font-semibold mb-2">
+                  Business Development Associate (Intern)
+                </h3>
+                <p class="text-gray-600 mb-1">Stack Edutech</p>
+                <p class="text-gray-600 mb-4">Remote</p>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Responded to student queries promptly, fostering a collaborative and inclusive environment.</li>
+                  <li>Maintained decorum in groups, addressed technical concerns, and prepared detailed daily progress reports.</li>
+                  <li>Developed time management, organizational skills, effective communication, and collaboration abilities.</li>
+                </ul>
+                <!-- Mobile logo (only visible on small screens) -->
+                <div class="flex justify-center mt-4 md:hidden">
+                  <img
+                    src="https://via.placeholder.com/300x200?text=Stack+Edutech"
+                    alt="Stack Edutech Logo"
+                    class="w-48 h-48 object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-bold text-center mb-16 section-title"
+          data-aos="fade-up"
+        >
+          Certificates
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Certificate 1 -->
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt="Cloud Computing"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Cloud Computing</h3>
+                <p class="text-gray-600 mb-4">
+                  Completed comprehensive course on cloud computing fundamentals and applications by NPTEL.
+                </p>
+                <p class="text-gray-500 text-sm">
+                  <i class="fas fa-calendar-alt mr-2"></i> October 2024
+                </p>
+                <div class="mt-4">
+                  <a href="#" target="_blank" class="text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt mr-1"></i> View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 2 -->
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt="Programming in C++"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Programming in C++: A Hands-on Introduction</h3>
+                <p class="text-gray-600 mb-4">
+                  Mastered C++ programming concepts including object-oriented programming principles.
+                </p>
+                <p class="text-gray-500 text-sm">
+                  <i class="fas fa-calendar-alt mr-2"></i> February 2024
+                </p>
+                <div class="mt-4">
+                  <a href="#" target="_blank" class="text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt mr-1"></i> View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 3 -->
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt="Data Structures and Algorithms"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Mastering Data Structure and Algorithms using C/C++</h3>
+                <p class="text-gray-600 mb-4">
+                  Completed comprehensive training on advanced data structures and algorithm implementation in C++.
+                </p>
+                <p class="text-gray-500 text-sm">
+                  <i class="fas fa-calendar-alt mr-2"></i> February 2024
+                </p>
+                <div class="mt-4">
+                  <a href="#" target="_blank" class="text-blue-500 hover:text-blue-700">
+                    <i class="fas fa-external-link-alt mr-1"></i> View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-bold text-center mb-16 section-title"
+          data-aos="fade-up"
+        >
+          Education
+        </h2>
+
+        <div class="timeline">
+          <!-- Education 1 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="flex items-center justify-between w-full">
+              <div class="flex justify-center w-2/5 mr-4 hidden md:flex">
+                <img
+                  src="./lpu logo.png"
+                  alt="Lovely Professional University Logo"
+                  class="w-64 h-64 object-contain"
+                />
+              </div>
+              <div class="timeline-content ml-auto">
+                <div
+                  class="bg-blue-500 text-white p-2 inline-block rounded mb-3"
+                >
+                  <i class="fas fa-graduation-cap"></i> 2022 - 2026
+                </div>
+                <h3 class="text-xl font-semibold mb-2">
+                  Bachelor of Technology - Computer Science and Engineering
+                </h3>
+                <p class="text-gray-600 mb-1">Lovely Professional University</p>
+                <p class="text-gray-600 mb-2">Punjab, India</p>
+                <p class="text-gray-600 mb-2">CGPA: 7.4</p>
+                <!-- Mobile logo (only visible on small screens) -->
+                <div class="flex justify-center mt-4 md:hidden">
+                  <img
+                    src="./schoolnitin.jpg"
+                    alt="Lovely Professional University Logo"
+                    class="w-48 h-48 object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education 2 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex items-center justify-between w-full">
+              <div class="timeline-content">
+                <div
+                  class="bg-blue-500 text-white p-2 inline-block rounded mb-3"
+                >
+                  <i class="fas fa-school"></i> 2020 - 2021
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Intermediate</h3>
+                <p class="text-gray-600 mb-1">Shree Ram Senior Secondary School</p>
+                <p class="text-gray-600 mb-2">Rohtak, Haryana</p>
+                <p class="text-gray-600 mb-2">Percentage: 95%</p>
+                <!-- Mobile logo (only visible on small screens) -->
+                <div class="flex justify-center mt-4 md:hidden">
+                  <img
+                    src="./schoolnitin.jpg"
+                    alt="Shree Ram Senior Secondary School Logo"
+                    class="w-40 h-40 object-contain"
+                  />
+                </div>
+              </div>
+              <div class="flex justify-center w-2/5 ml-4 hidden md:flex">
+                <img
+                  src="./schoolnitin.jpg"
+                  alt="Shree Ram Senior Secondary School Logo"
+                  class="w-56 h-56 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Education 3 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex items-center justify-between w-full">
+              <div class="flex justify-center w-2/5 mr-4 hidden md:flex">
+                <img
+                  src="./schoolnitin.jpg"
+                  alt="Shree Ram Senior Secondary School Logo"
+                  class="w-56 h-56 object-contain"
+                />
+              </div>
+              <div class="timeline-content ml-auto">
+                <div
+                  class="bg-blue-500 text-white p-2 inline-block rounded mb-3"
+                >
+                  <i class="fas fa-school"></i> 2018 - 2019
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Matriculation</h3>
+                <p class="text-gray-600 mb-1">Shree Ram Senior Secondary School</p>
+                <p class="text-gray-600 mb-2">Rohtak, Haryana</p>
+                <p class="text-gray-600 mb-2">Percentage: 88.2%</p>
+                <!-- Mobile logo (only visible on small screens) -->
+                <div class="flex justify-center mt-4 md:hidden">
+                  <img
+                    src="./stactedutact.jpeg"
+                    alt="Shree Ram Senior Secondary School Logo"
+                    class="w-40 h-40 object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-bold text-center mb-16 section-title"
+          data-aos="fade-up"
+        >
+          Get In Touch
+        </h2>
+
+        <div class="flex flex-col md:flex-row">
+          <!-- Contact Info -->
+          <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+            <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+            <p class="text-gray-600 mb-8">
+              Feel free to get in touch with me. I am always open to discussing new projects, 
+              creative ideas or opportunities to be part of your vision.
+            </p>
+
+            <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Phone</h3>
+                <p class="text-gray-600">+91 9305196163</p>
+              </div>
+            </div>
+
+            <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Email</h3>
+                <p class="text-gray-600">deepak822082@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Location</h3>
+                <p class="text-gray-600">Punjab, India</p>
+              </div>
+            </div>
+
+            <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+              <a href="https://www.linkedin.com/in/deepakkumar7206237949/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Deepak7206237949" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:deepak822082@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="md:w-1/2 md:pl-10" data-aos="fade-left">
+            <form class="bg-white rounded-lg shadow-lg p-8">
+              <div class="mb-6">
+                <label for="name" class="block text-gray-700 font-medium mb-2"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 font-medium mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  for="subject"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg transition-colors font-medium"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D Model Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-bold text-center mb-16 section-title"
+          data-aos="fade-up"
+        >
+          Interactive 3D Showcase
+        </h2>
+        <div class="flex justify-center" data-aos="zoom-in">
+          <div class="w-full max-w-4xl rounded-lg overflow-hidden shadow-xl">
+            <div class="sketchfab-embed-wrapper">
+              <iframe
+                title="Animated blooming water Lily"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking
+                execution-while-out-of-viewport
+                execution-while-not-rendered
+                web-share
+                style="width: 100%; height: 500px;"
+                src="https://sketchfab.com/models/70041f31b7224d73800ee0e485757a08/embed"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="text-2xl font-bold mb-4 md:mb-0">
+            DEEPAK<span class="text-blue-400">PANDEY</span>
+          </div>
+          <div class="flex flex-wrap justify-center space-x-4 md:space-x-6">
+            <a href="#home" class="hover:text-blue-400 transition-colors"
+              >Home</a
+            >
+            <a href="#about" class="hover:text-blue-400 transition-colors"
+              >About</a
+            >
+            <a href="#skills" class="hover:text-blue-400 transition-colors"
+              >Skills</a
+            >
+            <a href="#projects" class="hover:text-blue-400 transition-colors"
+              >Projects</a
+            >
+            <a href="#experience" class="hover:text-blue-400 transition-colors"
+              >Experience</a
+            >
+            <a
+              href="#certificates"
+              class="hover:text-blue-400 transition-colors"
+              >Certificates</a
+            >
+            <a href="#education" class="hover:text-blue-400 transition-colors"
+              >Education</a
+            >
+            <a href="#contact" class="hover:text-blue-400 transition-colors"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p>&copy; 2024 Deepak Kumar Pandey. All rights reserved.</p>
+          <div class="social-links mt-4 md:mt-0">
+            <a href="https://www.linkedin.com/in/deepakkumar7206237949/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Deepak7206237949" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:deepak822082@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+
+      // Typed.js initialization
+      var typed = new Typed(".typed-text", {
+        strings: [
+          "Full Stack Developer",
+          "Computer Science Engineer",
+          "Problem Solver",
+          "Web Developer"
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true,
+      });
+
+      // Mobile menu toggle
+      document
+        .getElementById("menu-button")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+
+        // Back to top button visibility
+        const backToTop = document.getElementById("backToTop");
+        if (window.scrollY > 300) {
+          backToTop.classList.add("visible");
+        } else {
+          backToTop.classList.remove("visible");
+        }
+      });
+
+      // Back to top button functionality
+      document
+        .getElementById("backToTop")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            if (
+              !document
+                .getElementById("mobile-menu")
+                .classList.contains("hidden")
+            ) {
+              document.getElementById("mobile-menu").classList.add("hidden");
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
